@@ -17,8 +17,8 @@ galaxy_info:
       - all
   
   galaxy_tags: 
-   - Kubernetes_Cluster
-   - Master_Node
+   - kubernetes-cluster
+   - master-node
 
 
-dependencies: []
+  dependencies: []
