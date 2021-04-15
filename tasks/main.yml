@@ -151,8 +151,8 @@
   command: "kubeadm token create --print-join-command"
   register: token_result
 
--  name: "Adding token to a File"
-   lineinfile:
+- name: "Adding token to a File"
+  lineinfile:
         regexp: "^token: " 
         line: "token: {{ token_result.stdout }}"
         dest: "{{ file_dest }}"
