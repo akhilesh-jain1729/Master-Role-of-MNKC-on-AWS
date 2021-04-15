@@ -37,13 +37,13 @@ No dependencies Required.
 Example Playbook
 ----------------
 
-    - hosts: tag_Name_Instance
-      become: yes
-      ignore_errors: yes
-      vars_files:
-         - vars.yml
-      roles:
-         - master
+- hosts: tag_Name_Instance
+  become: yes
+  ignore_errors: yes
+  vars_files:
+      - vars.yml
+  roles:
+      - master
 
 License
 -------
