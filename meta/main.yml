@@ -15,6 +15,9 @@ galaxy_info:
    - name: Amazon Linux 2 AMI
   
   
-galaxy_tags: []
+  galaxy_tags: 
+   - Kubernetes_Cluster
+   - Master_Node
+
 
 dependencies: []
