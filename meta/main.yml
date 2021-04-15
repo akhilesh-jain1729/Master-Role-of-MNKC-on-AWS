@@ -33,10 +33,13 @@ galaxy_info:
       - 6
       - 7
       - 8
-  
    - name: RHEL
-     - 7
-     - 8
+     versions:
+      - 7
+      - 8
+   - name: Amazon Linux
+     versions: 
+      - 2
   
   galaxy_tags: []
     # List tags for your role here, one per line. A tag is a keyword that describes
