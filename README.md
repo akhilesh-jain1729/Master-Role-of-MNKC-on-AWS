@@ -37,8 +37,6 @@ No dependencies Required.
 Example Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
     - hosts: tag_Name_Instance
       become: yes
       ignore_errors: yes
@@ -52,8 +50,8 @@ License
 
 BSD
 
-Author
-------
+About Author
+------------
 
 I am Akhilesh Jain, who has created this role. To understand more about this role and this complete Task, visit the following platforms of mine:
 
