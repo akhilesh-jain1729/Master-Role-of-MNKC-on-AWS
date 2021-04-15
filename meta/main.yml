@@ -28,18 +28,10 @@ galaxy_info:
   # https://galaxy.ansible.com/api/v1/platforms/
   #
   platforms:
-   - name: CentOS
-     versions:
-      - 6
-      - 7
-      - 8
-   - name: RHEL
-     versions:
-      - 7
-      - 8
-   - name: Amazon Linux
-     versions: 
-      - 2
+   - name: CentOS7
+   - name: CentOS8
+   - name: RHEL8
+   - name: Amazon Linux 2 AMI
   
   galaxy_tags: []
     # List tags for your role here, one per line. A tag is a keyword that describes
