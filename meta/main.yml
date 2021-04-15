@@ -1,6 +1,6 @@
 galaxy_info:
   author: Akhilesh Jain
-  description: This role will configure your VM/Instance into a Master Node of Multi Node Kubernetes Cluster.
+  description: This role will configure your VM/Instance into a Master Node of Multi Node Kubernetes Cluster. This role can be used on AMazon Linux 2 also.
   company: I am a Student
 
 
@@ -9,11 +9,12 @@ galaxy_info:
   min_ansible_version: 2.1
 
   platforms:
-   - name: CentOS 7
-   - name: CentOS 8
-   - name: RHEL 8
-   - name: Amazon Linux 2 AMI
-  
+   - name: CentOS
+     version:
+      - all
+   - name: RedHat
+     version:
+      - all
   
   galaxy_tags: 
    - Kubernetes_Cluster
