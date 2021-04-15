@@ -69,6 +69,7 @@
 
 - name: "Pulling Images"
   command: "kubeadm config images pull"
+  changed_when: false
 
 #Resolving Warning-1 Part-1
 - name: "Creating file in docker and in next task will be edited"
@@ -99,6 +100,7 @@
 - name: "Doing swap off"
   command: "swapoff -a"
   register: s
+  changed_when: false
   when: ansible_distribution=='RedHat'
 
 - name: "Copying k8s.conf file"
@@ -109,12 +111,14 @@
 
 - name: "running sysctl command"
   command: "sysctl --system"
+  changed_when: false
 
 #Creating Containers and Configuring Master
 
 - name: "Start the Cluster"
   command: "kubeadm init --pod-network-cidr={{ cidr_range }} --ignore-preflight-errors=NumCPU --ignore-preflight-errors=Mem"
   register: master_config
+  changed_when: false
 
 - name: debug
   debug:
@@ -146,9 +150,11 @@
   command: "kubectl apply -f kube-flannel.yml"
   args:
         chdir: /k8s/
+  changed_when: false
 
 - name: "Creating Token for Slaves"
   command: "kubeadm token create --print-join-command"
+  changed_when: false
   register: token_result
 
 - name: "Adding token to a File"
