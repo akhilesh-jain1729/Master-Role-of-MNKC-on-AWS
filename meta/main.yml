@@ -12,7 +12,7 @@ galaxy_info:
    - name: CentOS
      version:
       - all
-   - name: RedHat
+   - name: Amazon
      version:
       - all
   
