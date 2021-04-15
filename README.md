@@ -47,8 +47,7 @@ Example Playbook
 
 License
 -------
-
-BSD
+MIT
 
 About me
 --------
